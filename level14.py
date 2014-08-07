@@ -11,7 +11,7 @@ ll = [[i, i - 1, i - 1, i - 2] for i in xrange(100, 1, -2)]
 l = [i for ii in ll for i in ii]
 direction = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
-from PIL import Image, ImageDraw
+from PIL import Image
 img = Image.open('wire.png')
 pix = img.load()
 
