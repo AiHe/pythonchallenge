@@ -3,11 +3,15 @@
 '''
 import urllib
 import re
+
+
 def getContent(url):
     f = urllib.urlopen(url)
     content = f.read()
     print content
     return content
+
+
 def next(id):
     url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + str(id)
     data = getContent(url)
