@@ -5,6 +5,8 @@ import urllib
 import re
 import zipfile
 filename = './channel.zip'
+
+
 def download():
     f = urllib.urlopen('http://www.pythonchallenge.com/pc/def/channel.zip')
     w = open(filename, 'w')
